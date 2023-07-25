@@ -16,22 +16,22 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.4.RELEASE</version>
+        <version>2.7.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>com.cydeo</groupId>
-    <artifactId>Ticketing_Project_Microservices1</artifactId>
+    <artifactId>ticketing-project-microservices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Ticketing_Project_Microservices1</name>
-    <description>Ticketing_Project_Microservices1</description>
+    <name>ticketing-project-microservices</name>
+    <description>ticketing-project-microservices</description>
 
     <properties>
         <java.version>11</java.version>
-        <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
+        <spring-boot.version>2.7.5</spring-boot.version>
         <modelmapper.version>2.3.9</modelmapper.version>
         <lombok.version>1.18.22</lombok.version>
-        <spring-cloud.version>2.2.6.RELEASE</spring-cloud.version>
+        <spring-cloud.version>3.1.4</spring-cloud.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     </properties>
 
