@@ -11,10 +11,17 @@ spring:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: jdbc:postgresql://host.docker.internal:5435/ticketing-app
+    url: jdbc:postgresql://localhost:5432/ticketing-app
     username: postgres
     password: admin
     driver-class-name: org.postgresql.Driver
+
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://host.docker.internal:9411
+
 server:
   port: 9091
 
@@ -25,7 +32,7 @@ eureka:
     health-check-url-path: ${management.context-path}/health
   client:
     serviceUrl:
-      defaultZone: http://discovery-service:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 
 management:
